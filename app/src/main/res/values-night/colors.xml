@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="anabaslik">#ffffff</color>
+    <color name="rakamrengitext">#ffffff</color>
+    <color name="enustbarrengi">#000000</color>
+    <color name="anaarkaplanrengi">#000000</color>
+    <color name="rakamyazirengi">#FFFFFF</color>
+    <color name="butonarkaplanrengi">#111111</color>
+    <color name="acilisekranimetinrengi">#FFFFFF</color>
+    <color name="acilisekraniarkaplanrengi">#000000</color>
+</resources>
