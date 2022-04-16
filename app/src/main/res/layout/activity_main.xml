@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/anaarkaplanrengi"
+    android:background="@color/background"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -14,6 +14,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,50 +30,46 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/temizlemeid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:backgroundTint="#D84242"
-                    android:onClick="temizleoc"
+                    android:onClick="all_delete"
                     android:text="Ac"
-                    android:textColor="#000000"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/bolmeid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="boloc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="divide"
                     android:text="/"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/parantezsolid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="parantezsoloc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="left_brace"
                     android:text="("
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/parantezsagid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="parantezsagoc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="right_brace"
                     android:text=")"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
             </TableRow>
@@ -82,50 +79,46 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/btn7id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="yedioc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="seven"
                     android:text="7"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/btn8id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="sekizoc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="eight"
                     android:text="8"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/btn9id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="dokuzoc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="nine"
                     android:text="9"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/silid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="siloc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="delete"
                     android:text="DEL"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
             </TableRow>
@@ -135,50 +128,46 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/btn4id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="dortoc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="four"
                     android:text="4"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/btn5id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="besoc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="five"
                     android:text="5"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/btn6id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="altioc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="six"
                     android:text="6"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/carpid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="carpoc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="multiply"
                     android:text="x"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
             </TableRow>
@@ -188,50 +177,46 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/btn1id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="biroc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="one"
                     android:text="1"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/btn2id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="ikioc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="two"
                     android:text="2"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/btn3id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="ucoc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="three"
                     android:text="3"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/toplaid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="toplaoc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="add"
                     android:text="+"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
             </TableRow>
@@ -241,50 +226,46 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:id="@+id/btn0id"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="sifiroc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="zero"
                     android:text="0"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/noktaid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="noktaoc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="point"
                     android:text="."
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/sonucid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
                     android:backgroundTint="#5E94D6"
-                    android:onClick="sonucoc"
+                    android:onClick="result"
                     android:text="="
-                    android:textColor="#000000"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:id="@+id/cikarid"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/butonarkaplanrengi"
-                    android:onClick="cikaroc"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="minus"
                     android:text="-"
-                    android:textColor="@color/rakamyazirengi"
+                    android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
             </TableRow>
@@ -297,10 +278,10 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:text="Calculator"
-        android:textColor="@color/anabaslik"
+        android:textColor="@color/text"
         android:textSize="48sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -310,12 +291,25 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="135dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
         android:gravity="center|right"
         android:hint="0"
-        android:textColor="@color/rakamrengitext"
+        android:textColor="@color/text"
         android:textSize="60sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/night_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/night_mode" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

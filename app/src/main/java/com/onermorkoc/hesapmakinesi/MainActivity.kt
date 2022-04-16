@@ -1,122 +1,131 @@
 package com.onermorkoc.hesapmakinesi
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity(){
+
+    private lateinit var sharedPreferences: SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        sharedPreferences = this.getSharedPreferences("Calculator", Context.MODE_PRIVATE)
+
+        night_button.setOnClickListener {
+            val status = sharedPreferences.getString("night_mode", "")
+            if (status == "no"){
+                sharedPreferences.edit().putString("night_mode", "yes").apply()
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            }else{
+                sharedPreferences.edit().putString("night_mode", "no").apply()
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }
+
     }
-    fun sifiroc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"0"
-        textView2.text=yenisayi
+
+    fun add_text(text: String){
+        val old = textView2.text.toString()
+        val new = old + text
+        textView2.text = new
     }
-    fun biroc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"1"
-        textView2.text=yenisayi
+
+    fun zero(view: View){
+        add_text("0")
     }
-    fun ikioc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"2"
-        textView2.text=yenisayi
+
+    fun one(view: View){
+        add_text("1")
     }
-    fun ucoc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"3"
-        textView2.text=yenisayi
+
+    fun two(view: View){
+        add_text("2")
     }
-    fun dortoc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"4"
-        textView2.text=yenisayi
+
+    fun three(view: View){
+        add_text("3")
     }
-    fun besoc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"5"
-        textView2.text=yenisayi
+
+    fun four(view: View){
+        add_text("4")
     }
-    fun altioc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"6"
-        textView2.text=yenisayi
+
+    fun five(view: View){
+        add_text("5")
     }
-    fun  yedioc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"7"
-        textView2.text=yenisayi
+
+    fun six(view: View){
+        add_text("6")
     }
-    fun sekizoc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"8"
-        textView2.text=yenisayi
+
+    fun seven(view: View){
+        add_text("7")
     }
-    fun dokuzoc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"9"
-        textView2.text=yenisayi
+
+    fun eight(view: View){
+        add_text("8")
     }
-    fun noktaoc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"."
-        textView2.text=yenisayi
+
+    fun nine(view: View){
+        add_text("9")
     }
-    fun boloc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"/"
-        textView2.text=yenisayi
+
+    fun point(view: View){
+        add_text(".")
     }
-    fun parantezsoloc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"("
-        textView2.text=yenisayi
+
+    fun divide(view: View){
+        add_text("/")
     }
-    fun parantezsagoc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+")"
-        textView2.text=yenisayi
+
+    fun left_brace(view: View){
+        add_text("(")
     }
-    fun siloc(view: View){
-        val varolansayi=textView2.text.toString()
-        if (varolansayi.isNotEmpty()){
-            val yenisayi=varolansayi.substring(0,varolansayi.length-1)
-            textView2.text=yenisayi
+
+    fun right_brace(view: View){
+        add_text(")")
+    }
+
+    fun multiply(view: View){
+        add_text("*")
+    }
+
+    fun add(view: View){
+        add_text("+")
+    }
+
+    fun minus(view: View){
+        add_text("-")
+    }
+
+    fun all_delete(view: View){
+        textView2.text=""
+        textView2.hint="0"
+    }
+
+    fun delete(view: View){
+        val text=textView2.text.toString()
+        if (text.isNotEmpty()){
+            textView2.text = text.substring(0, text.length - 1)
         }
     }
-    fun carpoc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"*"
-        textView2.text=yenisayi
-    }
-    fun toplaoc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"+"
-        textView2.text=yenisayi
-    }
-    fun cikaroc(view: View){
-        val varolansayi=textView2.text.toString()
-        val yenisayi=varolansayi+"-"
-        textView2.text=yenisayi
-    }
-    fun temizleoc(view: View){
-        textView2.text=""
-        textView2.hint=""
-    }
-    fun sonucoc(view: View){
+
+    fun result(view: View){
        try {
-           val a=ExpressionBuilder(textView2.text.toString()).build()
-           val b=a.evaluate()
-           val c=b.toLong()
-           if (b==c.toDouble()){
-               textView2.hint=c.toString()
+           val expressionBuilder=ExpressionBuilder(textView2.text.toString()).build().evaluate()
+           if (expressionBuilder == expressionBuilder.toLong().toDouble()){
+               textView2.hint=expressionBuilder.toLong().toString()
                textView2.text=""
            }else{
-               textView2.hint=b.toString()
+               textView2.hint = expressionBuilder.toString()
                textView2.text=""
            }
        }catch (e:Exception){

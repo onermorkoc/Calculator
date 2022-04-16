@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/acilisekraniarkaplanrengi"
+    android:background="@color/background"
     tools:context=".MainActivity2">
 
     <ImageView
@@ -25,7 +25,7 @@
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="Calculator App"
-        android:textColor="@color/acilisekranimetinrengi"
+        android:textColor="@color/text"
         android:textSize="37sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
