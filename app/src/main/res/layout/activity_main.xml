@@ -14,6 +14,8 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="4dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,226 +31,274 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
+                    android:background="@drawable/background"
                     android:backgroundTint="#D84242"
                     android:onClick="all_delete"
                     android:text="Ac"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="brace"
                     android:text="()"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="percentage"
                     android:text="%"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="divide"
                     android:text="/"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tablerow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background"
+                    android:onClick="root"
+                    android:text="√"
+                    android:textColor="@color/text"
+                    android:textSize="24sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background"
+                    android:onClick="pi"
+                    android:text="pi"
+                    android:textColor="@color/text"
+                    android:textSize="24sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background"
+                    android:onClick="exponen"
+                    android:text="^"
+                    android:textColor="@color/text"
+                    android:textSize="24sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background"
+                    android:onClick="factorial_button"
+                    android:text="!"
+                    android:textColor="@color/text"
+                    android:textSize="24sp" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="seven"
                     android:text="7"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="eight"
                     android:text="8"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="nine"
                     android:text="9"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="delete"
                     android:text="DEL"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="four"
                     android:text="4"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="five"
                     android:text="5"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="six"
                     android:text="6"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="multiply"
                     android:text="x"
                     android:textColor="@color/text"
-                    android:textSize="20sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="20sp" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="one"
                     android:text="1"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="two"
                     android:text="2"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="three"
                     android:text="3"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="add"
                     android:text="+"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
             </TableRow>
 
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="zero"
                     android:text="0"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="point"
                     android:text="."
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
+                    android:background="@drawable/background"
                     android:backgroundTint="#5E94D6"
                     android:onClick="result"
                     android:text="="
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
 
-                <Button
-                    android:layout_height="85dp"
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="75dp"
+                    android:layout_margin="3dp"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
+                    android:background="@drawable/background"
                     android:onClick="minus"
                     android:text="-"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
+                    android:textSize="24sp" />
             </TableRow>
 
         </TableLayout>
@@ -271,16 +321,17 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="135dp"
+        android:layout_height="110dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="2dp"
         android:gravity="center|right"
         android:hint="0"
         android:textColor="@color/text"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/more"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -292,5 +343,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/night_mode" />
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="4dp"
+        android:rotationX="-180"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:srcCompat="@drawable/more" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
