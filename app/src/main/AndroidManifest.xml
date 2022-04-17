@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HesapMakinesi">
         <activity android:name=".MainActivity2"
-            android:screenOrientation="fullSensor"
+            android:screenOrientation="locked"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"
-            android:screenOrientation="fullSensor" >
+            android:screenOrientation="locked" >
         </activity>
     </application>
 </manifest>

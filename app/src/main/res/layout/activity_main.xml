@@ -30,8 +30,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="#D84242"
                     android:onClick="all_delete"
@@ -41,34 +40,31 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="brace"
+                    android:text="()"
+                    android:textColor="@color/text"
+                    android:textSize="24sp"
+                    app:cornerRadius="360dp" />
+
+                <Button
+                    android:layout_height="85dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/button_background"
+                    android:onClick="percentage"
+                    android:text="%"
+                    android:textColor="@color/text"
+                    android:textSize="24sp"
+                    app:cornerRadius="360dp" />
+
+                <Button
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="divide"
                     android:text="/"
-                    android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
-
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
-                    android:onClick="left_brace"
-                    android:text="("
-                    android:textColor="@color/text"
-                    android:textSize="24sp"
-                    app:cornerRadius="360dp" />
-
-                <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="1"
-                    android:backgroundTint="@color/button_background"
-                    android:onClick="right_brace"
-                    android:text=")"
                     android:textColor="@color/text"
                     android:textSize="24sp"
                     app:cornerRadius="360dp" />
@@ -79,8 +75,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="seven"
@@ -90,8 +85,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="eight"
@@ -101,8 +95,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="nine"
@@ -112,8 +105,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="delete"
@@ -128,8 +120,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="four"
@@ -139,8 +130,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="five"
@@ -150,8 +140,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="six"
@@ -161,14 +150,13 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="multiply"
                     android:text="x"
                     android:textColor="@color/text"
-                    android:textSize="24sp"
+                    android:textSize="20sp"
                     app:cornerRadius="360dp" />
             </TableRow>
 
@@ -177,8 +165,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="one"
@@ -188,8 +175,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="two"
@@ -199,8 +185,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="three"
@@ -210,8 +195,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="add"
@@ -226,8 +210,7 @@
                 android:layout_height="match_parent">
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="zero"
@@ -237,8 +220,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="point"
@@ -259,8 +241,7 @@
                     app:cornerRadius="360dp" />
 
                 <Button
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
+                    android:layout_height="85dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/button_background"
                     android:onClick="minus"

@@ -86,16 +86,20 @@ class MainActivity : AppCompatActivity(){
         add_text("/")
     }
 
-    fun left_brace(view: View){
-        add_text("(")
-    }
-
-    fun right_brace(view: View){
-        add_text(")")
-    }
-
     fun multiply(view: View){
         add_text("*")
+    }
+
+    fun brace(view: View){
+        if (textView2.text.toString().contains('(')){
+            add_text(")")
+        }else{
+            add_text("(")
+        }
+    }
+
+    fun percentage(view: View){
+        add_text("%")
     }
 
     fun add(view: View){
@@ -120,7 +124,7 @@ class MainActivity : AppCompatActivity(){
 
     fun result(view: View){
        try {
-           val expressionBuilder=ExpressionBuilder(textView2.text.toString()).build().evaluate()
+           val expressionBuilder=ExpressionBuilder(textView2.text.toString().replace("%","/100*")).build().evaluate()
            if (expressionBuilder == expressionBuilder.toLong().toDouble()){
                textView2.hint=expressionBuilder.toLong().toString()
                textView2.text=""
